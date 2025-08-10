@@ -1,0 +1,248 @@
+﻿    @using PagedList.Mvc;
+@model PagedList.IPagedList<fptshop1.Models.Product>
+
+
+
+@{
+    ViewBag.Title = "Trang chủ ";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+
+}
+
+<link href="~/CSS/Home.css?v= <?php echo time();?>" rel="stylesheet" />
+<section class="slider">
+    <div class="container">
+        <div class="slider-content">
+            <div class="slider-content-left">
+                <div class="slider-content-left-top-container">
+                    <div class="slider-content-left-top">
+                        <a href=""><img src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/12/638327305433176966_F-H1_800x300.png" alt="" /></a>
+                        <a href=""><img src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/10/638325495495742417_F-H1_800x300.png" alt="" /></a>
+                        <a href=""><img src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/6/638322019146737375_H1_800x300.png" alt="" /></a>
+                        <a href=""><img src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/5/638321277849385130_F-H1_800x300.png" alt="" /></a>
+                        <a href=""><img src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/11/638326350144248789_F-H1_800x300.png" alt="" /></a>
+
+                    </div>
+                    <div class="slider-content-left-top-btn">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="slider-content-left-bottom">
+                    <ul style="margin-top:0">
+                        <li class="active">S23 Ultra giá hủy diệt 19.99 tr</li>
+                        <li>iPhone 15 Pro Max Sẵn hàng</li>
+                        <li>Nồi cơm điện chỉ từ 390.000đ</li>
+                        <li>HONOR X8a giá cực sốc 3.990.000đ</li>
+                        <li>Reno8T giá sốc chỉ từ 6.990.000đ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider-content-right">
+                <div class=" slider-content-right-top">
+                    <img src="https://images.fpt.shop/unsafe/fit-in/385x100/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/13/638328162818690919_F-H2_385x100%20(1).png" alt="" />
+                    <img src="https://images.fpt.shop/unsafe/fit-in/385x100/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/11/638326123866148840_H2_385x100.png" alt="" />
+                </div>
+                <div class="slider-content-right-bottom">
+                    <ul>
+                        <p style="margin-top:0">Tin khuyến mãi</p>
+                        <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/70x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/images/2015/PhuongMT5/140x80(2).png" />FPT Shop giảm ngay 250K qua VNPAY-QR</a></li>
+                        <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/70x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/images/2015/PhuongMT5/70x40(1).png" />Đổi Phone 2G lấy Galaxy A05 giẩm 300K</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="iconbar">
+    <div class="container">
+        <div class="iconbar-list">
+            <ul>
+                <li><a href="~/Products/CateCus"><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2015/ic-dienthoai-desktop.png" alt="" /><div class="inside">Điện thoại</div></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2022/iconcate/icon-laptop.png" alt="" /><div class="inside">Laptop</div></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2022/iconcate/icon-pc.png" alt="" /><div class="inside">PC</div></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2015/icon-mtb-desk.png" alt="" /><div class="inside">Máy tính bảng</div></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2022/iconcate/icon-smart.png" alt="" /><div class="inside">Thiết bị thông minh</div></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2022/iconcate/icon-houseware.png" alt="" /><div class="inside">Gia dụng</div></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2015/ic-apple-desktop.png" alt="" /><div class="inside">Apple</div></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2015/destop-ic-samsung.png" alt="" /><div class="inside">Samsung</div></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2022/iconcate/icon-smartwatch.png" alt="" /><div class="inside">Đồng hồ thông minh</div></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2022/iconcate/icon-accessories.png" alt="" /><div class="inside">Phụ kiện</div></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2022/iconcate/icon-screen.png" alt="" /><div class="inside">Màn hình</div></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/60x60/filters:quality(90):fill(transparent)/fptshop.com.vn/Uploads/images/2022/iconcate/icon-tcdm.png" alt="" /><div class="inside">Máy cũ</div></a></li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="banner-one">
+    <div class="container">
+        <img style="width:100%" src="https://images.fpt.shop/unsafe/fit-in/1200x100/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/8/31/638291070880412190_H7_1200x100.png" />
+    </div>
+</section>
+
+<section class="slider-product-one">
+    <div class="container">
+        <div class="slider-product-one-content">
+            <div class="slider-product-one-content-title">
+                <h2>Khuyến mãi hot</h2>
+            </div>
+            <div class="slider-product-one-content-container">
+                <div class="slider-product-one-content-items-content">
+                    <div class="slider-product-one-content-items">
+                        <div class="slider-product-one-content-item">
+                            @foreach (var pro in Model)
+                            {
+                                <a href="/ProDetails/DetailsCus/@pro.ProID">
+                                    <div class="khuyen-mai-hot">
+                                        <div class="card-pro">
+                                            <p>@Html.DisplayFor(model => pro.ProID)</p>
+                                            <img src="~/Content/images/@pro.ProImage" width="200" height="250" />
+                                            <p><font style="font-size:25px" color="black">@Html.DisplayFor(model => pro.ProName)</font></p>
+                                            <p><font style="font-size:25px" color="#CD1818">@Html.DisplayFor(model => pro.Price)</font><sub style="color:#CD1818">đ</sub></p>
+                                            <p style="text-align: center;">
+                                                <a href="~/ShoppingCart/AddToCart/@pro.ProID" class="btn btn-danger">
+                                                    <button> MUA NGAY</button>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            }
+                        </div>
+
+                    </div>
+                    <div class="slider-product-one-content-items">
+                        <div class="slider-product-one-content-item">
+                            @foreach (var pro in Model)
+                            {
+                                <a href="/ProDetails/DetailsCus/@pro.ProID">
+                                    <div class="khuyen-mai-hot">
+                                        <div class="card-pro">
+                                            <p>@Html.DisplayFor(model => pro.ProID)</p>
+                                            <img src="~/Content/images/@pro.ProImage" width="200" height="250" />
+                                            <p><font style="font-size:25px" color="black">@Html.DisplayFor(model => pro.ProName)</font></p>
+                                            <p><font style="font-size:25px" color="#CD1818">@Html.DisplayFor(model => pro.Price)</font><sub style="color:#CD1818">đ</sub></p>
+                                            <p style="text-align: center;">
+                                                <a href="~/ShoppingCart/AddToCart/@pro.ProID" class="btn btn-danger">
+                                                    <button> MUA NGAY</button>
+                                                </a>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            }
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="slider-product-one-content-btn">
+                    <i class="fa-solid fa-circle-arrow-left fa-circle-arrow-right-k"></i>
+                    <i class="fa-solid fa-circle-arrow-right fa-circle-arrow-left-k"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="banner-two">
+    <div class="container">
+        <div class="banner-two-content">
+            <ul class="banner-two-content-list">
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/12/638327011225974215_item.png" alt="" /></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/12/638327011227536753_item-1.png" alt="" /></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/12/638327011226130467_item-2.png" alt="" /></a></li>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/12/638327011227380505_item-3.png" alt="" /></a></li>
+            </ul>
+            <div class="banner-two-content-3">
+                <div class="banner-two-content-3-img">
+                    <ul>
+                        <li><a href=""><img src="https://images.fpt.shop/unsafe/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/9/28/638315412186192831_button.png" alt="" /></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="banner-three">
+    <div class="container">
+        <div class="banner-three-img">
+            <a href="">  <img src="https://images.fpt.shop/unsafe/fit-in/1200x200/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/10/7/638322836375130709_H5-1200x200.png" alt="" /></a>
+        </div>
+    </div>
+
+</section>
+
+<section class="product-gallery-one">
+    <div class="container">
+        <div class="product-gallery-one-content">
+            <div class="product-gallery-one-content-tittle">
+                <h2>ĐIỆN THOẠI NỔI BẬT NHẤT</h2>
+                <ul>
+                    <li><a href="">Xem tất cả</a></li>
+                </ul>
+            </div>
+            <div class="san-pham">
+
+                @foreach (var pro in Model)
+                {
+                    <a href="/ProDetails/DetailsCus/@pro.ProID">
+                        <div class="col-sm-12-col-sm-6-col-md-4-col-lg-3">
+                            <div class="card-pro">
+                                <p>@Html.DisplayFor(model => pro.ProID)</p>
+                                <img src="~/Content/images/@pro.ProImage" width="200" height="250" />
+                                <p><font style="font-size:25px" color="black">@Html.DisplayFor(model => pro.ProName)</font></p>
+                                <p><font style="font-size:25px" color="#CD1818">@Html.DisplayFor(model => pro.Price)</font><sub style="color:#CD1818">đ</sub></p>
+                                <p style="text-align: center;">
+                                    <a href="~/ShoppingCart/AddToCart/@pro.ProID" class="btn btn-danger">
+                                        <button> MUA NGAY</button>
+                                    </a>
+
+                                </p>
+
+
+
+                            </div>
+                        </div>
+                    </a>
+
+                }
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="banner-4">
+    <div class="container">
+        <div class="banner-4-list">
+            <ul>
+                <li><a href=""><img src="https://images.fpt.shop/unsafe/fit-in/1200x200/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/8/31/638291076856319407_H5.png" alt="" /></a></li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<script src="~/JS/Home.js"></script>
+
+<!-- Thêm đoạn mã để hiển thị số trang và số trang hiện tại -->
+Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+<!--Control PagedListPager: mô tả mô hình với số trang là liên kết với tham số "Index" và tham số page-->
+@Html.PagedListPager(Model, page => Url.Action("ProductList", new { page }))
+<!-- Kết thúc -->

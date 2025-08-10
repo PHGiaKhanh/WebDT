@@ -1,0 +1,43 @@
+﻿@model  IEnumerable<fptshop1.Models.AdminUser>
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DANH SÁCH ADMIN</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Tên tài khoản Admin 
+        </th>
+        <th>
+            Mật khẩu 
+        </th>
+        <th>
+            Role 
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+          
+        </tr>
+    }
+
+</table>
+<p>
+    @Html.ActionLink("Thêm mới", "Admin", null, new { @class = "btn btn-primary" })
+</p>

@@ -1,0 +1,126 @@
+﻿@model fptshop1.Models.Cart
+@{
+    ViewBag.Title = "Giỏ hàng ";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+    <link href="~/CSS/Cart.css" rel="stylesheet" />
+<a style="color:blue" href="@Url.Action("ProductList", "Products")"> < Tiếp tục Mua hàng</a>
+<div style="margin: 10px auto; width: 100%;">
+
+    <table style="padding:0 0 0 200px" class="table table-bordered">
+
+        @if (Model != null)
+        {
+            <h2 style="text-align: center">THÔNG TIN GIỎ HÀNG</h2>
+            <hr />
+            <thead style="border-bottom:1px solid #808080">
+
+                <tr>
+                    <th>Tên Sản phẩm</th>
+                    <th>Hình</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Items)
+                {
+                    decimal total = item._quantity * (decimal)item._product.Price.Value;
+                    <tr>
+                        <td style="text-align:center" swidth="400">@Html.DisplayFor(model => item._product.ProName)</td>
+
+                        <td><img src="~/Content/images/@item._product.ProImage" width="100" height="110" /></td>
+                        <td width="100" align="right" style="text-align:center"> @Html.DisplayFor(model => item._product.Price)</td>
+                        <td align="right">
+                            @using (Html.BeginForm("Update_Cart_Quantity", "ShoppingCart"))
+                            {
+                                <input type="hidden" value="@item._product.ProID" name="idPro" />
+                                <input type="number" value="@item._quantity" name="carQuantity" style="text-align:center; width:60px;" min="0" />
+                                <input type="submit" value="Cập nhật" style="background-color: #c11a20; border:none; font-weight:bold; color:white;border-radius:5px;height:30px;width:80px" />
+                            }
+
+                        </td>
+                        <td width="100" align="right" style="text-align:center">@total.ToString("#,###,##0").Replace(',', '.')</td>
+
+                        <td>
+                            <a style="text-align:center" href="~/ShoppingCart/RemoveCart/@item._product.ProID" class="btn-danger" style="color:black"><button style="background-color: #c11a20; border:none; font-weight:bold; color:white;border-radius:5px;height:30px;width:50px" class="xoa"> Xóa </button></a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" align="center">
+                        <br />
+                        (Hãy đăng ký KH nếu chưa đăng ký)
+                        <a href="@Url.Action("Create", "Customers")" class="btn btn-success">Đăng ký</a>
+                    </td>
+                    <td colspan="3" style="text-align:right; font-size:x-large; color: crimson;">
+                        Tổng tiền : @Model.Total_money().ToString("#,###,##0").Replace(',', '.') Đồng
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <br />
+                        <h4>-------------------THÔNG TIN ĐƠN HÀNG-------------------</h4>
+                        @using (Html.BeginForm("CheckOut", "ShoppingCart"))
+                        {
+                            <table style="border-collapse:separate; border-spacing:5px;">
+                                <tr>
+                                    <td></td>
+                                    <td><input type="hidden" name="CodeCustomer" value="@Session["IDCus"]" required /></td>
+                                </tr>
+                                <tr>
+                                    <td> Khách hàng : </td>
+                                    <td><input type="text" name="NameCustomer" value="@Session["NameCus"]" required /></td>
+                                </tr>
+                                <tr>
+                                    <td> Điên thoại : </td>
+                                    <td><input type="text" name="PhoneCustomer" value="@Session["PhoneCus"]" required /></td>
+                                </tr>
+                                <tr>
+                                    <td> Địa chỉ giao hàng : </td>
+                                    <td> <input type="text" name="AddressDeliverry" required /></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <i style="font-family:Arial">(Hãy đăng nhập trước)</i>
+                                        <br />
+                                        <a style="color: white;background-color:#38ba3f;border-radius:4px;height:30px;width:120px;padding:8px 10px 8px 10px" href="@Url.Action("Login", "Customers")" class="btn btn-primary"> Đăng nhập</a>
+                                        <input style="background-color: #c11a20; border:none; font-weight:bold; color:white;border-radius:5px;height:30px;width:120px" type="submit" value="Thanh toán" class="btn btn-danger" />
+                                    </td>
+                                </tr>
+                            </table>
+                        }
+                    </td>
+                    <td colspan="3"></td>
+                </tr>
+
+            </tfoot>
+
+        }
+        else
+        {
+            <div class="trang-rong">
+                <div class="trang-rong-h">
+                    <form action="">
+                        <img style="width:400px" src="/Image/empty-cart.png" alt="" />
+                        <h2 style="color: #c11a20">Chưa có sản phẩm nào trong giỏ hàng </h2>
+                        <p>Cùng mua sắm hàng ngàn sản phẩm tại FPTShop nhé!</p>
+                        <button style="background-color:#c11a20;border-radius:6px">Mua hàng </button>
+                    </form>
+                </div>
+            </div>
+
+        }
+    </table>
+</div>
+
+
+
+

@@ -1,0 +1,30 @@
+﻿@model fptshop1.Models.Customer
+
+    @{
+        ViewBag.Title = "Login";
+        Layout = "~/Views/Shared/_MasterLayout.cshtml";
+    }
+    <link href="~/CSS/Login.css" rel="stylesheet" />
+    <h2 style="text-align: center">ĐĂNG NHẬP</h2>
+    <div class="form-register">
+        <h2 style="color: red;">@ViewBag.ThongBao</h2>
+        @using (Html.BeginForm("Login", "Customers"))
+        {
+            <div class="line-input">
+                <label for="name">HỌ VÀ TÊN :</label>
+                <input type="text" placeholder="   Nhập họ và tên " id="name">
+            </div>
+            <div class="line-input">
+                <label for="pwd">PASSWORD:</label>
+                <input type="password" id="pwd" placeholder="   Nhập mật khẩu ">
+            </div>
+            <div class="button-link-login">
+                <button style="background-color:#c41616">
+                    @Html.ActionLink("Đăng nhập ", "ShowCart","ShoppingCart")
+                </button>
+            </div>
+
+        }
+    </div>
+
+

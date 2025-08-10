@@ -1,0 +1,40 @@
+﻿@model fptshop1.Models.Color
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>MÀU SẮC </h2>
+
+<h3>Bạn có chắc chắn muốn xóa ?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            TÊN MÀU
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ColorName)
+        </dd>
+
+        <dt>
+            MÃ MÀU
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RGB)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    <input type="submit" value="Xóa" class="btn btn-default" /> 
+    @Html.ActionLink("Danh sách", "Index", null, new { @class = "btn btn-info" })
+</div>
+    }
+</div>

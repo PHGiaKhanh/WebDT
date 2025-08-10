@@ -1,0 +1,89 @@
+﻿@model fptshop1.Models.Product
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>SỬA SẢN PHẨM</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ProID)
+
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                SẢN PHẨM
+            </div>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                NHÃN HÀNG
+            </div>
+            <div class="col-md-10">
+                @Html.DropDownList("CatID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CatID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+             <div class="control-label col-md-2">
+                   HÌNH 
+             </div>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.ProImage, null, new { type = "file", @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ProImage, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                MÔ TẢ 
+            </div>
+            <div class="col-md-10">
+                 @Html.EditorFor(model => model.NameDecription, new { htmlAttributes = new { @class = "form-control" } })
+                 @Html.ValidationMessageFor(model => model.NameDecription, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                 NGÀY NHẬP 
+            </div>
+            <div class="col-md-10">
+                 @Html.EditorFor(model => model.CreatedDate, new { htmlAttributes = new { @class = "form-control" } })
+                 @Html.ValidationMessageFor(model => model.CreatedDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="control-label col-md-2">
+                ĐƠN GIÁ
+            </div>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Cập nhật" class="btn btn-primary" />
+                @Html.ActionLink("Danh sách", "Index", null, new { @class = "btn btn-info" })
+            </div>
+        </div>
+ </div>
+
+}
+
+

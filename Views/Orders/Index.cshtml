@@ -1,0 +1,57 @@
+﻿@model IEnumerable<fptshop1.Models.Order>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ĐƠN HÀNG</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            MÃ ĐƠN HÀNG 
+        </th>
+        <th>
+          NGÀY ĐẶT HÀNG
+        </th>
+        <th>
+           ĐỊA CHỈ GIAO HÀNG 
+        </th>
+        <th>
+            TỔNG TIỀN 
+        </th>
+        <th>
+            KHÁCH HÀNG 
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AddressDeliverry)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer.CusName)
+        </td>
+        <td>
+            @Html.ActionLink("Chi tiết ", "Details", new { id = item.OrderID }) |
+            @Html.ActionLink("Xóa ", "Delete", new { id = item.OrderID })
+        </td>
+    </tr>
+}
+
+</table>
+<p>
+    @Html.ActionLink("Thêm mới", "Create", null, new { @class = "btn btn-primary" })
+</p>

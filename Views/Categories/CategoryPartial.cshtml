@@ -1,0 +1,11 @@
+﻿@model IEnumerable<fptshop1.Models.Category>
+
+@{
+    foreach (var item in Model)
+    {
+        <li>
+            @Html.ActionLink(item.NameCate, "CateCus", "Products", new { category = item.CatID }, "")
+        </li>
+       
+    }
+}

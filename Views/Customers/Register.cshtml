@@ -1,0 +1,43 @@
+﻿@model fptshop1.Models.Customer
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<link href="~/CSS/Register.css" rel="stylesheet" />
+<h2>ĐĂNG KÍ THÀNH VIÊN</h2>
+
+<i>Đăng ký trở thành thành viên của fptshop để nhận nhiều ữu đãi hấp dẫn </i>
+<div class="form-register">
+
+    @using (Html.BeginForm("Register", "Customers"))
+    {
+        @Html.ValidationSummary(true)
+        <div class="line-input">
+            <label for="name">HỌ VÀ TÊN :</label>
+            <input type="text" placeholder="   Nhập họ và tên " id="name"  name="CusName">
+        </div>
+        <div class="line-input">
+            <label for="email">EMAIL:</label>
+            <input type="email" placeholder="    Nhập email" id="email" name="CusEmail">
+        </div>
+        <div class="line-input">
+            <label for="pwd">PASSWORD:</label>
+            <input type="password" id="pwd" placeholder="   Nhập mật khẩu " name="CusPassword">
+        </div>
+        <div class="line-input">
+            <label for="phone">ĐIỆN THOẠI:</label>
+            <input type="text" placeholder="   Nhập số điện thoại " id="phone" name="CusPhone">
+        </div>
+        <div class="button-link-login">
+            <button style="background-color: #27c04e; font-size: 16px">Đăng ký </button>
+            <button style="background-color:#c41616">@Html.ActionLink("Đăng nhập ", "Login")</button>
+        </div>
+        <br />
+        <i>( Nếu đã có tài khoản vui lòng đăng nhập )</i>
+
+    }
+</div>
+
+
+
+

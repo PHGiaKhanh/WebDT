@@ -1,0 +1,281 @@
+﻿@model fptshop1.Models.Product
+
+@{
+    ViewBag.Title = "Chi tiết sản phẩm ";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<title>DetailProduct</title>
+<link href="~/CSS/DetailProduct.css" rel="stylesheet" />
+
+<div class="top-detail">
+    <div class="location">
+        <p><a href="~/Products/ProductList">Trang chủ</a>  @@Html.DisplayFor(model => model.Category.NameCate)</p>
+    </div>
+    <div class="tieu-de-detail">
+        <h2>
+            @Html.DisplayFor(model => model.ProName)<spanp style="font-size:17px;color:gray;font-weight:400;padding-left:12px;">(No 00888204)</spanp>
+        </h2>
+        <ul>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li><i class="fa-solid fa-star"></i></li>
+            <li>
+                <a>83 đánh giá </a> | <a> 259 Hỏi đáp </a>
+            </li>
+            <li style="padding-left:15px">
+                <a><i class="fa-solid fa-circle-plus" style="color: #0664f9"></i>   So sánh</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-detail">
+    <div class="left-detail-product">
+        <div class="anh-product">
+
+            <img src="~/Content/images/@Model.ProImage" width="200" height="200" style="object-fit: contain;" />
+            @Html.ValidationMessageFor(model => model.ProImage, "", new { @class = "text-danger" })
+            <!---<img src="~/Image/Detail/samsung1.png" />
+            <img src="~/Image/Detail/samsung2.png" />
+            <img src="~/Image/Detail/samsung3.png" />
+            <img src="~/Image/Detail/samsung4.png" />-->
+        </div>
+
+        <div class="slider-content-btn">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+
+        <div class="swiper">
+            <ul>
+                <li><i class="fa-solid fa-circle"></i></li>
+                <li><i class="fa-solid fa-circle"></i></li>
+                <li><i class="fa-solid fa-circle"></i></li>
+                <li><i class="fa-solid fa-circle"></i></li>
+                <li><i class="fa-solid fa-circle"></i></li>
+            </ul>
+        </div>
+
+        <div class="minh-hoa">
+            <ul>
+                <li><a href=""><i class="fa-regular fa-image"></i><br />Xem thêm 47 ảnh</a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i><br />Video trên tay</a></li>
+                <li><a href=""><i class="fa-solid fa-box-archive"></i><br />Trong hộp có gì</a></li>
+                <li><a href=""><i class="fa-solid fa-arrows-rotate"></i><br />Ảnh 360 độ</a></li>
+            </ul>
+        </div>
+
+
+        <div class="chi-tiet">
+            <ul>
+                <li><i class="fa-solid fa-mobile-screen"></i>6.7 inch, 3.4 inch, Dynamic AMOLED, FHD+, 1080 x 2636 Pixels</li>
+                <li><i class="fa-solid fa-spinner"></i>12.0 MP + 12.0 MP</li>
+                <li><i class="fa-regular fa-face-smile"></i>10.0 MP</li>
+                <li><i class="fa-solid fa-microchip"></i>Snapdragon 8 Gen 2</li>
+                <li><i class="fa-solid fa-server"></i>256 GB</li>
+                <li><a href="">Xem chi tiết thông số kĩ thuật</a></li>
+            </ul>
+        </div>
+        <div class="bao-hanh-giao-hang">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-medal"></i>Hàng chính hãng - Bảo hành 12 Tháng
+                </li>
+                <li><i class="fa-solid fa-truck-fast"></i>Giao hàng toàn quốc</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="right-detail-product">
+        <div class="gia-ca">
+            <div class="gia-ca-left">
+                <P>@Html.DisplayFor(model => model.Price) <span style="color:gray;font-size:20px;text-decoration:line-through">  25.990.000₫</span></P>
+            </div>
+            <div class="gia-ca-right">
+                <p>Trả góp chỉ từ<br /><span style="font-weight:700;font-size:17px">2.177.000₫</span> / tháng</p>
+            </div>
+        </div>
+
+        <div class="bo-nho">
+            <ul>
+                <li style="background-color:#edeeef">
+                    <input type="radio">
+                    <label><span style="font-weight:600">256 GB</span><br />21.990.000đ</label>
+                </li>
+                <li>
+                    <input type="radio">
+                    <a href=""><label><span style="font-weight:600">512 GB</span><br />25.990.000đ </label></a>
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="chon-loai">
+            <ul>
+                <li><a href=""><img src="~/Image/Detail/phanloai4.png" style=" border: 2px solid #cc1818;border-radius:5px;" /><br />Xanh</a></li>
+                <li><a href=""><img src="~/Image/Detail/phanloai2.png" /><br />Kem</a></li>
+                <li><a href=""><img src="~/Image/Detail/phanloai3.png" /><br />Tím</a></li>
+                <li><a href=""><img src="~/Image/Detail/phanloai1.png" /><br />Xám </a></li>
+            </ul>
+        </div>
+        <a href=""><img src="~/Image/Detail/qc-detail1.png" /></a>
+
+        <div class="khuyen-mai-dac-biet">
+            <ul>
+                <li style=" border-bottom: 2px solid #eaeaea;font-size:17px;font-weight:600"><p style="margin:0">Nhận ngay khuyến mại đặc biệt</p></li>
+                <li><i class="fa-solid fa-circle-check"></i>Giảm ngay 4,000,000đ</li>
+                <li><i class="fa-solid fa-circle-check"></i>Trả góp 0%</li>
+                <li><i class="fa-solid fa-circle-check"></i>Tặng Samsung Care+ 6 tháng</li>
+                <li><a href="">Xem thêm ưu đãi khác </a></li>
+            </ul>
+        </div>
+
+        <div class="mua-ngay">
+            <a class="btn btn-primary" href="@Url.Action("AddToCart", "ShoppingCart", new { id = Model.ProID })">
+                <button type="button"><span style="font-size:23px;font-weight:500">MUA NGAY</span> <br />Giao hàng miễn phí hoặc nhận tại shop</button>
+            </a>
+        </div>
+        <div class="tra-gop">
+            <ul>
+                <li style="margin-right:12px"><button type="button"><span style="font-size: 23px; font-weight: 500">TRẢ GÓP 0% </span><br />Duyệt nhanh qua điện thoại </button></li>
+                <li><button type="button"><span style="font-size: 23px; font-weight: 500">TRẢ GÓP QUA THẺ</span> <br />Visa,Master Card,JCB,AMEX</button></li>
+            </ul>
+        </div>
+
+        <div class="goi-y-mua-kem">
+            <p><b>Gợi ý sản phẩm mua kèm</b></p>
+            <div class="block-goi-y">
+                <ul>
+                    <li><img src="~/Image/Detail/goiy4.png" /></li>
+                    <li>
+                        Củ sạc nhanh Samsung 25W Type-C<br />
+                        <span style="color:#cc1818;font-weight:600">392.000₫</span>
+                        <span style="color:gray; text-decoration: line-through; font-weight: 500">490.000₫</span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><img src="~/Image/Detail/goiy3.png" style="padding-bottom:12px;" /></li>
+                    <li>
+                        Ốp lưng Samsung Galaxy Z Flip 5 trong <br />
+                        <span style="color:#cc1818;font-weight:600">583.000₫</span>
+                        <span style="color:gray; text-decoration: line-through; font-weight: 970">490.000₫</span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><img src="~/Image/Detail/goiy2.png" style="padding:9px 0 9px 0" /></li>
+                    <li>
+                        Samsung Galaxy Watch6 BT 40mm<br />
+                        <span style="color:#cc1818;font-weight:600">6.392.000₫</span>
+                        <span style="color:gray; text-decoration: line-through; font-weight: 6.990">490.000₫</span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li><img src="~/Image/Detail/goiy1.png" style="padding:7px 2px 6px 2px" /></li>
+                    <li>
+                        Tai nghe Samsung Galaxy Buds2<br />
+                        <span style="color:#cc1818;font-weight:600">2.492.000₫</span>
+                        <span style="color:gray; text-decoration: line-through; font-weight: 500">2.990.000₫</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bottom-main-detail">
+    <div class="bottom-detail-left">
+        <h3 style="color:#323232">Đặc điểm nổi bật của Samsung Galaxy Z Flip5 5G</h3>
+        <img src="~/Image/Detail/banner1.png" />
+        <h3 style="color:#323232;text-align:center">Đánh giá chi tiết Samsung Galaxy Z Flip5 5G</h3>
+        <p>Nhập hội linh hoạt cùng Samsung Galaxy Z Flip 5, bạn sẽ trải nghiệm loạt công nghệ đột phá đầy thú vị và thiết kế độc đáo hoàn toàn mới. Nơi bạn có thể thỏa thích khám phá và tự tin thể hiện gu cá tính. Sự nhỏ gọn, vừa vặn và tính thời trang của <span style="color:#0168fa">Z Flip 5</span> còn giúp bạn thật nổi bật và sẵn sàng “cân” mọi phong cách yêu thích.</p>
+        <img src="~/Image/Detail/banner2.png" width="670" />
+        <button type="button">Đọc thêm </button>
+    </div>
+
+
+    <div class="bottom-detail-right">
+        <h3 style="color:#323232">Thông số kỹ thuật</h3>
+        <div class="thong-so">
+            <table>
+                <tr>
+                    <td>Màn hình</td>
+                    <td>6.7 inch, 3.4 inch, Dynamic AMOLED, FHD+, 1080 x 2636 Pixels</td>
+                </tr>
+                <tr style="background-color:#ffffff">
+                    <td>Camera sau</td>
+                    <td>12.0 MP + 12.0 MP </td>
+                </tr>
+                <tr>
+                    <td>Camera Selfie</td>
+                    <td>10.0 MP </td>
+                </tr>
+                <tr style="background-color:#ffffff">
+                    <td>RAM</td>
+                    <td>8 GB</td>
+                </tr>
+                <tr>
+                    <td>Bộ nhớ trong</td>
+                    <td>256 GB</td>
+                </tr>
+                <tr style="background-color:#ffffff">
+                    <td>CPU</td>
+                    <td>Snapdragon 8 Gen 2</td>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>Adreno 740</td>
+                </tr>
+                <tr style="background-color:#ffffff">
+                    <td>Dung lượng pin</td>
+                    <td>3700 mAh</td>
+                </tr>
+                <tr>
+                    <td>Thẻ sim</td>
+                    <td>1 - 1 eSIM, 1 Nano SIM </td>
+                </tr>
+                <tr style="background-color:#ffffff">
+                    <td>Hệ điều hành</td>
+                    <td>Android 13.0</td>
+                </tr>
+                <tr>
+                    <td>Xuất xứ</td>
+                    <td>Việt Nam / Trung Quốc </td>
+                </tr>
+                <tr style="background-color:#ffffff">
+                    <td>Thời gian ra mắt</td>
+                    <td>07/2023</td>
+                </tr>
+            </table>
+            <a href="">Xem cấu hình chi tiết </a>
+        </div>
+        <div class="tin-tuc">
+            <h3 style="color:#323232">Tin tức về Samsung Galaxy Z Flip5 5G</h3><br />
+            <a href=""> Sẽ ra sao nếu tra tấn Samsung Galaxy Z Flip5 bằng dao rọc giấy, hơ lửa và bẻ cong?</a><br />
+            <br />
+            <a href="">Cực HOT: Sở hữu Samsung Galaxy Z Flip5 chỉ từ 17.49 triệu đồng, giá quá hấp dẫn, mời bạn nhanh tay chốt ngay!</a><br />
+            <br />
+            <a href="">Video teardown cho thấy Samsung Galaxy Z Flip5 dễ sửa chữa hơn thế hệ trước</a><br />
+            <br />
+            <a href="">Samsung Galaxy Z Fold5 và Galaxy Z Flip5 quá "hot", phá kỷ lục đặt hàng trước tại Hàn Quốc</a><br />
+            <br />
+            <a href="">Samsung Galaxy Z Flip5 ra mắt: Màn hình ngoài lớn, bản lề không kẽ hở, giá từ 25.99 triệu đồng</a><br />
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+

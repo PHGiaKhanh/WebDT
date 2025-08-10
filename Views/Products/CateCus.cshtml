@@ -1,0 +1,319 @@
+﻿
+@using PagedList.Mvc;
+@model PagedList.IPagedList<fptshop1.Models.Product>
+
+@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<link href="~/CSS/Category.css" rel="stylesheet" />
+
+
+<div class="location">
+    <p><a href="~/Products/ProductList">Trang chủ</a> / Điện thoại </p>
+</div>
+<div class="container">
+    <div class="slider-content">
+        <a href="">
+            <img src="~/Image/Category/IP15.png" />
+        </a>
+        <a href="">
+            <img src="~/Image/Category/IP14.png" />
+        </a>
+        <a href="">
+            <img src="~/Image/Category/IP13.png" />
+        </a>
+    </div>
+    <div class="slider-content-btn">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+        <i class="fa-solid fa-circle-chevron-right"></i>
+    </div>
+</div>
+
+
+<div class="main-category">
+    <div class="menu-bar2">
+        <p>Hãng sản xuất</p>
+        <label class="check-container">
+            Tất cả các hãng
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Apple
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Samsung
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Xiaomi
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Vivo
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Oppo
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Nokia
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Realme
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <p>Mức giá</p>
+        <label class="check-container">
+            Tất cả
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Dưới 2 triệu
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Từ 2 - 4 triệu
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Từ 4 - 7 triệu
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Từ 7 - 13 triệu
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Trên 13 triệu
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <p>Tính năng đặc biệt </p>
+        <label class="check-container">
+            Tất cả
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Bảo mật vân tay
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Nhận diện khuôn mặt
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Chống nước và bụi
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Sạc nhanh
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Hỗ trợ 5g
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Sạc không dây
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <p>Hiệu năng và pin </p>
+        <label class="check-container">
+            Tất cả
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Dưới 3000mah
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Pin từ 3000 - 4000mah
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Pin từ 4000 - 5000mah
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Siêu trâu , trên 5000mah
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Chơi game / cấu hình cao
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+
+        <p>Màn hình  </p>
+        <label class="check-container">
+            Tất cả
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Màn hình nhỏ dưới 5.0 inch
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Nhỏ gọn vừa tay dưới 6.0 inch, tràn viền
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Trên 6.0 inch
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Màn hình gập
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+
+        <p>Camera </p>
+        <label class="check-container">
+            Tất cả
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Quay phim slow motion
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            AI camera
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Hiệu ứng làm đẹp
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Zoom quang học
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Chống rung ois
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Chụp macro
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="check-container">
+            Chụp góc rộng
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <div class="product-cate">
+        <div class="menu-brand">
+            <p>
+                Điện thoại
+                <span style="color:gray;font-family:Arial;font-weight:400;font-size:19px">
+                  9
+                </span>
+            </p>
+            <ul>
+                @{ Html.RenderAction("CategoryPartial", "Categories");}
+            </ul>
+        </div>
+
+
+        <div class="list-category">
+            <div class="mini-text">
+                <p>Ưu tiên xem : </p>
+                <ul>
+                    <li style="border-top-left-radius:5px;border-bottom-left-radius:5px;border-left:2px solid #cd1818;background-color:#cd1818;color:white">Bán chạy nhất </li>
+                    <li style="border-left:2px solid lightgrey">Trả góp 0 đồng  </li>
+                    <li style="border-left:2px solid lightgrey">Giá thấp </li>
+                    <li style="border-left:2px solid lightgrey">Giá cao</li>
+                    <li style="border-left:2px solid lightgrey">Ưu đãi online</li>
+                </ul>
+            </div>
+
+            <div class="san-pham">
+                <div class="san-pham-cate">
+                    @foreach (var pro in Model)
+                    {
+                        <a class="btn btn-info" href="~/ProDetails/DetailsCus/@pro.ProID">
+                            <div class="col-sm-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card-pro">
+
+                                    <img src="~/Content/images/@pro.ProImage" style=" width: 200px; height: 300px; object-fit: contain; border-radius: 2px;" />
+                                    <h3 style="font-size: 20px">@Html.DisplayFor(model => pro.ProName)</h3>
+                                    <p style="color: #cd1818; font-size: 22px; font-weight: bold;margin:7px 0 1px 0">@Html.DisplayFor(model => pro.Price)</p>
+                                    <p style="text-align:right;color:dimgray;margin-bottom:1px">4.000.000 đ/tháng</p>
+                                    <img src="~/Image/Category/zalopay.png" style=" width: 45px; border-radius: 100%" />
+                                    <p style="padding-top:10px;color:#444444;font-size:10px">
+                                        Giảm 200.000đ qua ZaloPay-QR
+                                    </p>
+                                    <button>
+                                        <a href="/ShoppingCart/AddToCart/@pro.ProID" style="color:white"> MUA NGAY </a>
+                                    </button>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    }
+                </div>
+
+
+                <div class="bottom-cate">
+                    <p>
+                        Hãy cùng tìm hiểu về lịch sử và phát triển của điện thoại thông minh, các tính năng và thông số kỹ thuật quan trọng mà bạn cần biết khi nếu muốn mua một chiếc điện thoại phù hợp. FPT Shop cũng sẽ cung cấp cho bạn bảng thông số kỹ thuật và các thương hiệu phổ biến nhất đang kinh doanh để giúp bạn so sánh các sản phẩm và tìm ra chiếc điện thoại phù hợp nhất cho mình.
+                    </p>
+                    <img src="~/Image/Category/qc.png" />
+                </div>
+            </div>
+
+        </div>
+        <script src="~/JS/Category.js"></script>
+
+
+
+
+
+

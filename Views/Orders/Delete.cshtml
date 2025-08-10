@@ -1,0 +1,56 @@
+﻿@model fptshop1.Models.Order
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ĐƠN HÀNG</h2>
+
+<h3>Bạn có chắc muốn xóa ?</h3>
+<div>
+   
+    <dl class="dl-horizontal">
+        <dt>
+            NGÀY ĐẶT HÀNG 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+
+        <dt>
+            ĐỊA CHỈ GIAO HÀNG 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddressDeliverry)
+        </dd>
+
+        <dt>
+            TỔNG TIỀN 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalValue)
+        </dd>
+
+        <dt>
+            SỐ ĐIỆN THOẠI KHÁCH HÀNG 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer.CusPhone)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    <input type="submit" value="Xóa" class="btn btn-default" /> |
+    @Html.ActionLink("Danh sách ", "Index")
+</div>
+    }
+</div>

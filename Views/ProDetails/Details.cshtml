@@ -1,0 +1,68 @@
+﻿@model fptshop1.Models.ProDetail
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>QUẢN LÝ KHO HÀNG  </h2>
+
+<div>
+   
+    <dl class="dl-horizontal">
+        <dt>
+            Số Lượng Sản Phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RemainQuantity)
+        </dd>
+
+        <dt>
+            Số Lượng Sản Phẩm Bán Ra:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoldQuantity)
+        </dd>
+
+        <dt>
+            Số Lượt Xem:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ViewQuantity)
+        </dd>
+
+        <dt>
+          Màu Săc:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color.ColorName)
+        </dd>
+
+        <dt>
+            Tên Sản Phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product.ProName)
+        </dd>
+
+        <dt>
+            Nhà Cung Cấp:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Supplier.SupName)
+        </dd>
+
+        <br />
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" value="Sửa  " class="btn btn-default" />
+        @Html.ActionLink("Danh sách", "Index", null, new { @class = "btn btn-info" })
+    </div>
+
+    </dl>
+</div>

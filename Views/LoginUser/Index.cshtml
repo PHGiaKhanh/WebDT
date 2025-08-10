@@ -1,0 +1,38 @@
+﻿@model fptshop1.Models.AdminUser
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .field-validation-error {
+        color: red;
+    }
+</style>
+<h2>ĐĂNG NHẬP</h2>
+<hr />
+@using (Html.BeginForm("LoginAcount", "LoginUser"))
+{
+    @Html.AntiForgeryToken()
+    <input type="hidden" value="@Session["chon"]" name="chon" />
+    <table>
+        <tr>
+            <td style="padding: 5px">@Html.LabelFor(model => model.Username) </td>
+            <td>@Html.TextBoxFor(model => model.Username, new { style = "filed-validation-error" })</td>
+            <td>@Html.ValidationMessageFor(model => model.Username)</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px">@Html.LabelFor(model => model.Password)</td>
+            <td>@Html.EditorFor(model => model.Password)</td>
+            <td>@Html.ValidationMessageFor(model => model.Password)</td>
+            @if (ViewBag.ErrorInfo == null)
+            {
+                <p>@ViewBag.ErrorInfo</p>
+            }
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Login" class="btn btn-primary" /></td>
+        </tr>
+    </table>
+}

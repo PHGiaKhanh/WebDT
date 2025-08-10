@@ -1,0 +1,37 @@
+﻿@model fptshop1.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<h2>KHÁCH HÀNG </h2>
+
+<div>
+   
+    <dl class="dl-horizontal">
+        <dt>
+            TÊN KHÁCH HÀNG
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CusName)
+        </dd>
+        <dt>
+            SỐ ĐIỆN THOẠI 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CusPhone)
+        </dd>
+        <dt>
+            EMAIL
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CusEmail)
+        </dd>
+
+    </dl>
+</div>
+

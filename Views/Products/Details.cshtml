@@ -1,0 +1,76 @@
+﻿@model fptshop1.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sản Phẩm</h2>
+
+<div>
+    
+    <dl class="dl-horizontal">
+        <dt>
+            Mã Sản Phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProID)
+        </dd>
+        <dt>
+            Sản Phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProName)
+        </dd>
+
+        <dt>
+            Hình Ảnh
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProImage)
+        </dd>
+
+        <dt>
+            Mô Tả
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameDecription)
+        </dd>
+
+        <dt>
+            Ngày Tạo Sản Phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+        <dt>
+            Đơn giá
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            Nhãn Hàng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.NameCate)
+        </dd>
+
+
+    </dl>
+    <br />
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" value="Sửa " class="btn btn-default" />
+        @Html.ActionLink("Danh sách", "Index", null, new { @class = "btn btn-info" })
+    </div>
+</div>
+

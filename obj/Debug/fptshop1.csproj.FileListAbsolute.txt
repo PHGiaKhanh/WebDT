@@ -1,0 +1,174 @@
+D:\fptshop1\bin\fptshop1.dll.config
+D:\fptshop1\bin\fptshop1.dll
+D:\fptshop1\bin\fptshop1.pdb
+D:\fptshop1\bin\roslyn\csc.exe
+D:\fptshop1\bin\roslyn\csc.exe.config
+D:\fptshop1\bin\roslyn\csc.rsp
+D:\fptshop1\bin\roslyn\csi.exe
+D:\fptshop1\bin\roslyn\csi.exe.config
+D:\fptshop1\bin\roslyn\csi.rsp
+D:\fptshop1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\fptshop1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\fptshop1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\fptshop1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\fptshop1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\fptshop1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\fptshop1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\fptshop1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\fptshop1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\fptshop1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\fptshop1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\fptshop1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\fptshop1\bin\roslyn\System.AppContext.dll
+D:\fptshop1\bin\roslyn\System.Collections.Immutable.dll
+D:\fptshop1\bin\roslyn\System.Console.dll
+D:\fptshop1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\fptshop1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\fptshop1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\fptshop1\bin\roslyn\System.Globalization.Calendars.dll
+D:\fptshop1\bin\roslyn\System.IO.Compression.dll
+D:\fptshop1\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\fptshop1\bin\roslyn\System.IO.FileSystem.dll
+D:\fptshop1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\fptshop1\bin\roslyn\System.Net.Http.dll
+D:\fptshop1\bin\roslyn\System.Net.Sockets.dll
+D:\fptshop1\bin\roslyn\System.Reflection.Metadata.dll
+D:\fptshop1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\fptshop1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\fptshop1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\fptshop1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\fptshop1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\fptshop1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\fptshop1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\fptshop1\bin\roslyn\System.ValueTuple.dll
+D:\fptshop1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\fptshop1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\fptshop1\bin\roslyn\System.Xml.XPath.dll
+D:\fptshop1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\fptshop1\bin\roslyn\vbc.exe
+D:\fptshop1\bin\roslyn\vbc.exe.config
+D:\fptshop1\bin\roslyn\vbc.rsp
+D:\fptshop1\bin\roslyn\VBCSCompiler.exe
+D:\fptshop1\bin\roslyn\VBCSCompiler.exe.config
+D:\fptshop1\bin\Antlr3.Runtime.dll
+D:\fptshop1\bin\EntityFramework.dll
+D:\fptshop1\bin\EntityFramework.SqlServer.dll
+D:\fptshop1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\fptshop1\bin\Microsoft.Web.Infrastructure.dll
+D:\fptshop1\bin\Newtonsoft.Json.dll
+D:\fptshop1\bin\System.Web.Helpers.dll
+D:\fptshop1\bin\System.Web.Mvc.dll
+D:\fptshop1\bin\System.Web.Optimization.dll
+D:\fptshop1\bin\System.Web.Razor.dll
+D:\fptshop1\bin\System.Web.WebPages.Deployment.dll
+D:\fptshop1\bin\System.Web.WebPages.dll
+D:\fptshop1\bin\System.Web.WebPages.Razor.dll
+D:\fptshop1\bin\WebGrease.dll
+D:\fptshop1\bin\EntityFramework.xml
+D:\fptshop1\bin\EntityFramework.SqlServer.xml
+D:\fptshop1\bin\System.Web.Helpers.xml
+D:\fptshop1\bin\System.Web.Mvc.xml
+D:\fptshop1\bin\System.Web.Optimization.xml
+D:\fptshop1\bin\System.Web.Razor.xml
+D:\fptshop1\bin\System.Web.WebPages.xml
+D:\fptshop1\bin\System.Web.WebPages.Deployment.xml
+D:\fptshop1\bin\System.Web.WebPages.Razor.xml
+D:\fptshop1\bin\Newtonsoft.Json.xml
+D:\fptshop1\bin\Antlr3.Runtime.pdb
+D:\fptshop1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\fptshop1\obj\Debug\fptshop1.csproj.AssemblyReference.cache
+D:\fptshop1\obj\Debug\fptshop1.csproj.CoreCompileInputs.cache
+D:\fptshop1\obj\Debug\fptshop1.csproj.CopyComplete
+D:\fptshop1\obj\Debug\fptshop1.dll
+D:\fptshop1\obj\Debug\fptshop1.pdb
+D:\fptshop1\bin\PagedList.dll
+D:\fptshop1\bin\PagedList.Mvc.dll
+D:\fptshop1\bin\PagedList.xml
+D:\fptshop1\bin\PagedList.Mvc.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\fptshop1.dll.config
+D:\Năm 2\HK1\LTW\fptshop1\bin\fptshop1.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\fptshop1.pdb
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\csc.exe
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\csc.exe.config
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\csc.rsp
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\csi.exe
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\csi.exe.config
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\csi.rsp
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.AppContext.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Collections.Immutable.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Console.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Globalization.Calendars.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.IO.Compression.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.IO.FileSystem.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Net.Http.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Net.Sockets.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Reflection.Metadata.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.ValueTuple.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Xml.XPath.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\vbc.exe
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\vbc.exe.config
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\vbc.rsp
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\VBCSCompiler.exe
+D:\Năm 2\HK1\LTW\fptshop1\bin\roslyn\VBCSCompiler.exe.config
+D:\Năm 2\HK1\LTW\fptshop1\bin\Antlr3.Runtime.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\EntityFramework.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\EntityFramework.SqlServer.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\Microsoft.Web.Infrastructure.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\Newtonsoft.Json.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\PagedList.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\PagedList.Mvc.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.Helpers.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.Mvc.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.Optimization.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.Razor.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.WebPages.Deployment.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.WebPages.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.WebPages.Razor.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\WebGrease.dll
+D:\Năm 2\HK1\LTW\fptshop1\bin\EntityFramework.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\EntityFramework.SqlServer.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\PagedList.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\PagedList.Mvc.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.Helpers.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.Mvc.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.Optimization.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.Razor.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.WebPages.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.WebPages.Deployment.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\System.Web.WebPages.Razor.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\Newtonsoft.Json.xml
+D:\Năm 2\HK1\LTW\fptshop1\bin\Antlr3.Runtime.pdb
+D:\Năm 2\HK1\LTW\fptshop1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Năm 2\HK1\LTW\fptshop1\obj\Debug\fptshop1.csproj.AssemblyReference.cache
+D:\Năm 2\HK1\LTW\fptshop1\obj\Debug\fptshop1.csproj.CoreCompileInputs.cache
+D:\Năm 2\HK1\LTW\fptshop1\obj\Debug\fptshop1.csproj.CopyComplete
+D:\Năm 2\HK1\LTW\fptshop1\obj\Debug\fptshop1.dll
+D:\Năm 2\HK1\LTW\fptshop1\obj\Debug\fptshop1.pdb

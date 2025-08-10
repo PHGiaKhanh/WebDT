@@ -1,0 +1,74 @@
+﻿@model fptshop1.Models.ProDetail
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Quản lý sản phẩm </h2>
+
+<h3>Bạn có chắc là muốn xóa không !?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Số Lượng Sản Phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RemainQuantity)
+        </dd>
+
+        <dt>
+            Số Lượng Sản Phẩm Bán Ra:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoldQuantity)
+        </dd>
+
+        <dt>
+            Số Lượt Xem:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ViewQuantity)
+        </dd>
+
+        <dt>
+            Màu Sắc:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color.ColorName)
+        </dd>
+
+        <dt>
+            Tên Sản Phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product.ProName)
+        </dd>
+
+        <dt>
+            Nhà Cung Cấp:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Supplier.SupName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    <input type="submit" value="Xóa" class="btn btn-default" /> 
+    @Html.ActionLink("Danh sách", "Index", null, new { @class = "btn btn-info" })
+</div>
+    }
+</div>

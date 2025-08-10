@@ -1,0 +1,36 @@
+﻿body {
+    font-family:Arial;
+
+}
+.form-register {
+    width: 650px;
+    text-align:right;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 12px
+}
+    .form-register input {
+        width: 40%;
+        height: 50px;
+        border-radius: 3px;
+        
+    }
+.form-control {
+    align-items:center;
+}
+.line-input {
+    line-height: 50px;
+    margin: 12px 30px 12px 0;
+}
+.button-link-login {
+    width: 700px;
+}
+    .button-link-login button {
+        border: none;
+        border-radius: 5px;
+        color:white;
+        font-size: 30px;
+        width: 90px;
+        height: 40px;
+    }
